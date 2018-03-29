@@ -1,0 +1,5 @@
+PLUGIN_SQUIDBACKUP:
+  MAX_BACKUPS: Maximum backups reached, next backup will delete the oldest backup.
+  TIMER_ALERT: "You haven't backed up in %s days, we recommend making one now. <button data-ajax=\"%s\" class=\"button button-small secondary\"><i class=\"fa fa-database\"></i>Backup Now</button>"
+  AUTO_BACKUP: "Automatic Backup successfully created. <a href=\"%s\" class=\"button button-small secondary\">Download Now</a>"
+  AUTO_BACKUP_ERROR: "Automatic Backup failed to created. Please backup manually via the dashboard."

@@ -1,0 +1,76 @@
+name: Squid Backup
+version: 1.0.0
+description: Backup Manager
+icon: plug
+author:
+  name: Laura
+  email: laura@urbansquid.london
+homepage: https://github.com/urbansquidlondon/grav-plugin-squid-backup
+keywords: grav, plugin, backup, manager, backup manager, maintenance, autobackup
+bugs: https://github.com/urbansquidlondon/grav-plugin-squid-backup/issues
+docs: https://github.com/urbansquidlondon/grav-plugin-squid-backup/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    max_backups:
+      type: text
+      size: x-small
+      label: Maximum backups allowance
+      help: The max number of backups to allow the user to store on the backups folder
+      default: 3
+      validate:
+        type: number
+        required: true
+    notifications:
+      type: toggle
+      label: Backup Notifications
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+        required: true
+    notification_timer:
+      type: text
+      size: x-small
+      label: Number of days between alerts
+      help: The number of days between the latest backup and today's date.
+      default: 14
+      validate:
+        type: number
+        required: true
+    allow_auto_backups:
+      type: toggle
+      label: Allow Automatic Backup
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+        required: true
+    auto_backup:
+      type: text
+      size: x-small
+      label: Number of days between autobackups
+      help: The number of days to trigger an auto backup between the latest backup and today's date.
+      default: 30
+      validate:
+        type: number
+        required: true
+

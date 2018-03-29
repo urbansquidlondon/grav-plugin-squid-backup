@@ -1,0 +1,6 @@
+enabled: true
+max_backups: 3
+notification_timer: 14
+allow_auto_backups: false
+auto_backup: 30
+notifications: true
