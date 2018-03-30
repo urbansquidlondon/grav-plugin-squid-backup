@@ -2,4 +2,4 @@ PLUGIN_SQUIDBACKUP:
   MAX_BACKUPS: Nombre de backup maximal atteint, le prochain backup supprimera le plus ancien.
   TIMER_ALERT: "Vous n'avez pas fait de sauvegardes depuis %s jours, nous vous recommandons d'en faire une maintenant. <button data-ajax=\"%s\" class=\"button button-small secondary\"><i class=\"fa fa-database\"></i>Sauvegarder Maintenant</button>"
   AUTO_BACKUP: "Sauvegarde automatique créée avec succès <a href=\"%s\" class=\"button button-small secondary\">Télécharger la sauvegarde</a>"
-  AUTO_BACKUP_ERROR: "La création de la sauvegarde automatique a échouée. Veuillez sauvegarder manuellement depuis le tableau de bord."<button data-ajax=\"%s\" class=\"button button-small secondary\"><i class=\"fa fa-database\"></i>Sauvegarder Maintenant</button>"
+  AUTO_BACKUP_ERROR: "La création de la sauvegarde automatique a échouée. Veuillez sauvegarder manuellement depuis le tableau de bord.<button data-ajax=\"%s\" class=\"button button-small secondary\"><i class=\"fa fa-database\"></i>Sauvegarder Maintenant</button>"
