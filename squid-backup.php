@@ -96,9 +96,9 @@ class SquidBackupPlugin extends Plugin
         $name = substr(strip_tags($this->grav['config']->get('site.title', basename(GRAV_ROOT))), 0, 20);
         $inflector = new Inflector();
 
-        $backup = explode($inflector->hyphenize($name).'-', end($this->backups));
-        $newest = explode('.', $backup[1])[0];
-        return $this->newest = $newest;
+        $backup = explode('.zip', end($this->backups));
+        $newest = explode('-', $backup[0]);
+        return $this->newest = end($newest);
     }
 
     private function diff($date1, $length = 'days', $date2 = null) {
