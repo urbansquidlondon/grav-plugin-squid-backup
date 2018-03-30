@@ -2,6 +2,8 @@
 namespace Grav\Plugin;
 
 use Grav\Common\Filesystem\Folder;
+use Grav\Common\Grav;
+use Grav\Common\Inflector;
 use Grav\Common\Plugin;
 use Grav\Common\Utils;
 use Grav\Common\Backup\ZipBackup;
@@ -91,7 +93,10 @@ class SquidBackupPlugin extends Plugin
 
     private function getNewestBackup()
     {
-        $backup = explode('-', end($this->backups));
+        $name = substr(strip_tags($this->grav['config']->get('site.title', basename(GRAV_ROOT))), 0, 20);
+        $inflector = new Inflector();
+
+        $backup = explode($inflector->hyphenize($name).'-', end($this->backups));
         $newest = explode('.', $backup[1])[0];
         return $this->newest = $newest;
     }

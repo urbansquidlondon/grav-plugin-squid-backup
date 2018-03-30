@@ -1,0 +1,5 @@
+PLUGIN_SQUIDBACKUP:
+  MAX_BACKUPS: Atingiu o máximo de cópias de segurança, durante a próxima irá apagar a cópia mais antiga.
+  TIMER_ALERT: "Não faz cópias de segurança à %s dias, recomendamos que o faça. <button data-ajax=\"%s\" class=\"button button-small secondary\"><i class=\"fa fa-database\"></i>Backup Agora</button>"
+  AUTO_BACKUP: "Cópia de segurança criada automáticamente. <a href=\"%s\" class=\"button button-small secondary\">Fazer Download</a>"
+  AUTO_BACKUP_ERROR: "Error ao criar cópia de segurança automática. Por fazer tente fazer manualmente."
