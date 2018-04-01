@@ -1,3 +1,9 @@
+# v1.0.3
+##  1/04/2018
+
+1. [](#bugfix)
+    * Bugfix for site titles with multiple words
+
 # v1.0.1
 ##  03/30/2018
 
