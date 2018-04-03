@@ -1,3 +1,9 @@
+# v1.0.4
+##  2/04/2018
+
+1. [](#bugfix)
+    * Bugfix removed unused subscribed event thanks @Psi-Jack
+    
 # v1.0.3
 ##  1/04/2018
 
