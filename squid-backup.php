@@ -29,8 +29,7 @@ class SquidBackupPlugin extends Plugin
     public static function getSubscribedEvents()
     {
         return [
-            'onPluginsInitialized' => ['onPluginsInitialized', 0],
-            'onAdminTaskExecute' => ['onAdminTaskExecute', 0]
+            'onPluginsInitialized' => ['onPluginsInitialized', 0]
         ];
     }
 
@@ -93,11 +92,10 @@ class SquidBackupPlugin extends Plugin
 
     private function getNewestBackup()
     {
-        $name = substr(strip_tags($this->grav['config']->get('site.title', basename(GRAV_ROOT))), 0, 20);
-        $inflector = new Inflector();
 
         $backup = explode('.zip', end($this->backups));
         $newest = explode('-', $backup[0]);
+
         return $this->newest = end($newest);
     }
 
